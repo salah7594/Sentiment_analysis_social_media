@@ -129,7 +129,7 @@ STATIC_ROOT = os.path.join(PROJECT_ROOT, 'SentimentAnalysis_twitter.staticfiles'
 STATIC_URL = '/static/'
 
 #for heroku whitenoise - collecting of static assets
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+#STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR,'static'),
