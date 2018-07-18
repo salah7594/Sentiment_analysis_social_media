@@ -1,0 +1,138 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Sentiment Analysis | Instagram && Twitter</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="{% static 'css/materialize.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="{% static '/css/style.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+
+<nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo">Data Analysis</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+</nav>
+
+
+
+  <!-- Main form - Action area -->
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="mainHeading center red-text">Instagram Data Analyse</h1>
+        <div class="row center need-space">
+			<a href="{% url 'map' %}" id="download-button" class="btn-large waves-effect waves-light red tooltipped padbutton" data-position="bottom" data-delay="50" data-tooltip="Click to view the result">Dataset 1</a>
+			<a> </a>
+			<a href="{% url 'map-we' %}" id="download-button" class="btn-large waves-effect waves-light red tooltipped padbutton" data-position="bottom" data-delay="50" data-tooltip="Click to view the result">Dataset April_Week-end</a>
+		</div>
+		
+		
+		
+        </form>
+         
+        </div>
+      
+      <br><br>
+
+    </div>
+  </div>
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="mainHeading center orange-text">Sentiment Analysis with Tweets</h1>
+      <div class="input-field col s6">
+         <form method="POST" action="/search/"> 
+            {% csrf_token %}
+            {{ form.as_p }}
+            <div class="row center need-space" >
+              <input type='submit' value='Analyse' id="download-button" class="btn-large waves-effect waves-light orange tooltipped padbutton" data-position="bottom" data-delay="50" data-tooltip="Click to view Analysed tweets">
+            </div>
+        </form>
+         
+        </div>
+      
+      <br><br>
+
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">search</i></h2>
+            <h5 class="center">Search</h5>
+
+            <p class="light">Search for a keyword that you would like to Analyse</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">pie_chart</i></h2>
+            <h5 class="center">Analyse</h5>
+
+            <p class="light">Tweets will be returned as positive, negative or neutral. Also the polarity produced will be returned</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">file_download</i></h2>
+            <h5 class="center">Download</h5>
+            <p class="light">Use the downloaded CSV File for your own analysis</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br><br>
+  </div>
+
+  <footer class="page-footer orange">
+    <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">About me</h5>
+                <p class="grey-text text-lighten-4">I am currently a 4th year student at the engineering school ESIEE Paris. I am interested in Data Science. </p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Connect With me</h5>
+                <div>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="https://github.com/salah7594" target="_blank">GitHub</a></li>
+                  <li><a class="grey-text text-lighten-3" href="http://linkedin.com/in/salahedine-abdelkrim" target="_blank">LinkedIn</a></li>
+                  <li><a class="grey-text text-lighten-3" target="_blank">Email: salabd@hotmail.fr</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </div>
+    <div class="footer-copyright">
+      <div class="container">
+        <p>Salahedine ABDELKRIM</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="{% static 'js/materialize.js' %}"></script>
+  <script src="{% static 'js/init.js' %}"></script>
+
+  </body>
+</html>
