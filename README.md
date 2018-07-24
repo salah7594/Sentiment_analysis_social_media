@@ -1,6 +1,7 @@
 "# Sentiment_analysis_social_media" 
 
-Here is a app able to search for recent tweets based on a keyword. User can view analysed tweets as positive, negative or neutral, along with relevant polarities (Sentiment Analysis with Spacy, emoji are also used). In addition, User can download csv version of tweets and sentiments.
+Here is an app able to search for recent tweets based on a keyword. User can view analysed tweets as positive, negative or neutral, along with relevant polarities (Sentiment Analysis with Spacy, emoji are also used). In addition, User can download csv version of tweets and sentiments. 
+Application deployed with Heroku and Django is the framework used.
 
 ## Development Guide
 
