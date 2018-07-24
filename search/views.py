@@ -13,6 +13,7 @@ from . import SentimentAnalysis_twitter
 import tweepy
 from textblob import TextBlob
 import csv
+#import spacy
 
 consumer_key = "G9mpGpHkKriYlJNh1DeV01yhV"
 consumer_secret = "FqMjSCpkMXFsDw0Yal35y65XNQGTZinRDkuF9CJTnzB6kyuLne"
