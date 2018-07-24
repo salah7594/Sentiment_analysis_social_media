@@ -5,6 +5,8 @@ Application deployed with Heroku and Django is the framework used.
 
 Here is the link: [https://sentiment-analysis-tweet-insta.herokuapp.com/](https://sentiment-analysis-tweet-insta.herokuapp.com/)
 
+[![](https://preview.ibb.co/ehgtg8/screen.png)](https://{https://ibb.co/fiQauT})
+
 ## Development Guide
 
 1. Create a virtualenv. `virtualenv somename`
