@@ -3,6 +3,8 @@
 Here is an app able to search for recent tweets based on a keyword. User can view analysed tweets as positive, negative or neutral, along with relevant polarities (Sentiment Analysis with Spacy, emoji are also used). In addition, User can download csv version of tweets and sentiments. 
 Application deployed with Heroku and Django is the framework used.
 
+Here is the link: [https://sentiment-analysis-tweet-insta.herokuapp.com/](https://sentiment-analysis-tweet-insta.herokuapp.com/)
+
 ## Development Guide
 
 1. Create a virtualenv. `virtualenv somename`
